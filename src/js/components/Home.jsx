@@ -42,9 +42,9 @@ const Home = () => {
 				<input type="text" className="form-control" id="tasker" onKeyDown={addtoList} onChange={handletask} value={task} placeholder="What need to be done?"></input>
 				<ul className="list-group list-group-flush">
 					{list.map((item, index)=>(
-						<li className="list-group-item d-flex justify-content-between">
+						<li className="list-group-item d-flex justify-content-between container">
 							<span key={index}>{item}</span>
-							<button type="button" className="btn-close" onClick={()=>deleteTask(item)} aria-label="Close"></button>
+							<button type="button" className="btn-close hide" onClick={()=>deleteTask(item)} aria-label="Close"></button>
 						</li>
 						))}
 				</ul>
